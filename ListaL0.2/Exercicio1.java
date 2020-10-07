@@ -5,19 +5,19 @@ class Pessoa {
     private float peso;
 
     String getNome() {
-        return this.nome;
+        return nome;
     }
     void setNome(String nome) {
         this.nome = nome;
     }
     int getIdade() {
-        return this.idade;
+        return idade;
     }
     void setIdade(int idade) {
         this.idade = idade;
     }
     float getPeso() {
-        return this.peso;
+        return peso;
     }
    
     void setPeso(float peso) {
@@ -25,26 +25,29 @@ class Pessoa {
     }
     // Imprime todas as propriedades da classe
     void imprimeDados() {
-        System.out.println("Este é o nome: %s"+ nome);
-        System.out.println("Este é o nome: %d"+ idade);
-        System.out.println("Este é o nome: %f"+ peso);
+        System.out.println("Este é o nome: "+ nome);
+        System.out.println("Este é o nome: "+ idade);
+        System.out.println("Este é o nome: "+ peso);
     }
    }
 
-class Ecercicio1 {
+class Exercicio1 {
     public static void main (String args[]) {
-        Pessoa a = new Pessoa();
+        Pessoa p = new Pessoa();
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Digite o nome: ");
-        a.setNome(a) = teclado.nextLine();
+        String nome = teclado.nextLine();
+        p.setNome(nome);
 
         System.out.println("Digite a idade: ");
-        a.setIdade(a) = teclado.nextInt();
+        int idade = teclado.nextInt();
+        p.setIdade(idade);
 
         System.out.println("Digite seu peso: ");
-        a.setPeso(a) = teclado.nextLine;
+        float peso = teclado.nextFloat();
+        p.setPeso(peso);
 
-        a.imprimeDados();
+        p.imprimeDados();
     }
 }
