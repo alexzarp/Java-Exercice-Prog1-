@@ -26,8 +26,8 @@ class Pessoa {
     // Imprime todas as propriedades da classe
     void imprimeDados() {
         System.out.println("Este é o nome: "+ nome);
-        System.out.println("Este é o nome: "+ idade);
-        System.out.println("Este é o nome: "+ peso);
+        System.out.println("Esta é a idade: "+ idade);
+        System.out.println("Este é o peso: "+ peso);
     }
    }
 
@@ -49,5 +49,7 @@ class Exercicio1 {
         p.setPeso(peso);
 
         p.imprimeDados();
+
+        System.out.println("Peso: "+ p.getPeso());
     }
 }
