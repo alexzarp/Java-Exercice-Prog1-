@@ -1,24 +1,24 @@
 class Tester {
-    private int var;
+    private int var;
     public Tester(double var) {
-        this.var = (int)var;
+        this.var = (int)var;
     }
 
     public Tester(int var) {
-        this("hello");
+        this("hello");
     }
 
     public Tester() {
-        System.out.println("good­bye");
+        System.out.println("good­bye");
     }
     public Tester(String s) {
-        this();
-        System.out.println(s);
+        this();
+        System.out.println(s);
     }
 }
 
 class Exercicio3 {
     public static void main(String[] args) {
-        Tester t = new Tester(5);
+        Tester t = new Tester(5);
     }
 }
